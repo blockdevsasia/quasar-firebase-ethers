@@ -22,3 +22,8 @@ To start with Firebase:
 To start with Ethereum:
 - Install Truffle and Ganache-cli globally
 - Run scripts from /solidity folder, see package.json for details
+
+And to actually run it:
+- In the quasar-client folder (android or just web browser): 
+    - quasar dev -m cordova -T android
+    - quasar dev
