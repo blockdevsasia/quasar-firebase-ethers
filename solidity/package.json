@@ -1,0 +1,54 @@
+{
+  "name": "quasar-firebase-ethers",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "truffle test --network development",
+    "lint": "vue-cli-service lint",
+    "deploy": "truffle deploy --network development",
+    "deploy:rinkeby": "truffle deploy --network rinkeby",
+    "deploy:reset:rinkeby": "truffle deploy --reset --network rinkeby",
+    "gen:rinkeby-key": "node ./scripts/gen-eth-key.js rinkeby",
+    "ganache-cli": "ganache-cli --hostname 192.168.1.2 -m \"myth like bonus scare over problem client lizard pioneer submit female collect\""
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.1",
+    "chai": "^4.2.0",
+    "es6-promisify": "^6.0.0",
+    "openzeppelin-solidity": "^2.1.3",
+    "p-timeout": "^2.0.1",
+    "truffle-hdwallet-provider": "^1.0.4",
+    "truffle-test-utils": "^0.1.0",
+    "web3-utils": "^1.0.0-beta.36"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
